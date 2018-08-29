@@ -1,0 +1,243 @@
+
+/*résolution*/
+
+@media screen and (max-width:980px) {
+    .bloc_header h1{
+        font-size: 1.8em;
+    }
+    .header--navigation ul{
+        flex-wrap: wrap;
+        margin: auto;
+        font-size: 0.9em;
+    }
+    .bloc_photo h3{
+        font-size: 1em;
+    }
+    .bloc_photo p{
+        font-size: 0.7em;
+    }
+    .bloc_presentation h3{
+        font-size: 1em;
+    }
+    .bloc_presentation p{
+        font-size: 0.7em;
+    }
+}
+
+/*polices utilisées*/
+
+@font-face {
+    font-family: 'amikobold';
+    src: url('police/amiko-fontfacekit/Amiko-Bold-webfont.eot');
+    src: url('police/amiko-fontfacekit/Amiko-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/amiko-fontfacekit/Amiko-Bold-webfont.woff2') format('woff2'),
+         url('police/amiko-fontfacekit/Amiko-Bold-webfont.woff') format('woff'),
+         url('police/amiko-fontfacekit/Amiko-Bold-webfont.ttf') format('truetype'),
+         url('police/amiko-fontfacekit/Amiko-Bold-webfont.svg#amikobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amikoregular';
+    src: url('police/amiko-fontfacekit/Amiko-Regular-webfont.eot');
+    src: url('police/amiko-fontfacekit/Amiko-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/amiko-fontfacekit/Amiko-Regular-webfont.woff2') format('woff2'),
+         url('police/amiko-fontfacekit/Amiko-Regular-webfont.woff') format('woff'),
+         url('police/amiko-fontfacekit/Amiko-Regular-webfont.ttf') format('truetype'),
+         url('police/amiko-fontfacekit/Amiko-Regular-webfont.svg#amikoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amikosemibold';
+    src: url('police/amiko-fontfacekit/Amiko-SemiBold-webfont.eot');
+    src: url('police/amiko-fontfacekit/Amiko-SemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/amiko-fontfacekit/Amiko-SemiBold-webfont.woff2') format('woff2'),
+         url('police/amiko-fontfacekit/Amiko-SemiBold-webfont.woff') format('woff'),
+         url('police/amiko-fontfacekit/Amiko-SemiBold-webfont.ttf') format('truetype'),
+         url('police/amiko-fontfacekit/Amiko-SemiBold-webfont.svg#amikosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*header*/
+
+	/*banniere*/
+
+.bloc_header{
+	background-image: url(img/header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 6em;
+	padding-top: 3em;
+	padding-right: 5em;
+	padding-left: 5em;
+	background-attachment: all;
+	font-family: 'amikoregular';
+	text-align: center;
+
+}
+
+.bloc_header h1{
+	font-family: 'amikosemibold';
+	margin-bottom: 1em;
+}
+.bloc_header ul{
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.bloc_header a{
+ 	color: rgb(0, 0, 0);
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* essai transition */
+    transition-duration: 0.4s;
+ }
+
+ .bloc_header a:hover{
+ 	color: rgb(250, 250, 250);
+ }
+
+ .bloc_header button{
+ 	margin-top: 15em;
+ }
+
+ /*Boutons*/
+
+ .button{
+ 	font-size: 1em;
+    color: #000000; 
+    border: 2px solid #008CBA;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* essai transition */
+    transition-duration: 0.4s;
+    border-radius: 45%;
+    font-family: 'amikoregular';
+ }
+
+ .button:hover{
+ 	box-shadow: 2px 2px 10px black;
+    background-color: #008CBA;
+    color: white;
+ }
+
+ /*sections*/
+
+ 	/*bloc photo*/
+
+ .bloc_photo{
+ 	text-align: center;
+ 	padding-bottom: 1.2em;
+ 	font-family: 'amikoregular';
+ }
+
+ .bloc_photo--photos{
+  	justify-content: space-around;
+  	display: flex;
+ }
+
+/*article*/
+
+	/*description*/
+
+.bloc_presentation{
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-family: 'amikoregular';
+	background-color: rgb(223, 242, 255);
+}
+
+.bloc_presentation a{
+ 	color: rgb(0, 0, 0);
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* essai transition */
+    transition-duration: 0.4s;
+}
+
+.bloc_presentation button{
+	margin-top: 1.3em;
+}
+
+	/*bloc blog*/
+
+.bloc_blog{
+	text-align: center;
+	padding-top: 4em;
+	padding-bottom: 4em;
+	font-family: 'amikoregular';
+	background-image: url(img/blogbckgrnd.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bloc_blog a{
+ 	color: rgb(0, 0, 0);
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* essai transition */
+    transition-duration: 0.4s;
+ }
+
+.bloc_blog a:hover{
+ 	box-shadow: 2px 2px 10px black;
+    background-color: #008CBA;
+    color: white;
+ }
+
+ .bloc_blog button{
+ 	margin-top: 1em;
+ 	margin-bottom: 1em;
+ }
+	/*Formulaire*/
+
+.bloc_formulaire{
+	text-align: center;
+	font-family: 'amikoregular';
+}
+
+.bloc_formulaire--incription{
+	margin-right: 10em;
+	margin-left: 10em;
+}
+
+.button--ready{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	-webkit-transition-duration: 0.4s; /* essai transition */
+    transition-duration: 0.4s;
+	font-size: 1em;
+    color: #000000; 
+    border: 2px solid #008CBA;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 45%;
+    font-family: 'amikoregular';
+    margin-top: 1em;
+}
+
+.button--ready:hover{
+ 	box-shadow: 2px 2px 10px black;
+    background-color: #008CBA;
+    color: white;
+ }
+
+/*footer*/
+
+.footer{
+	background-color: rgb(223, 242, 255);
+	text-align: center;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin-top: 2em;
+}
